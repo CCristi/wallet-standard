@@ -21,11 +21,12 @@ export type SolanaSignAndSendAllTransactionsFeature = {
         /**
          * Sign transactions using the account's secret key and send them to the chain.
          *
-         * @param inputs Inputs for signing and sending transactions.
+         * @param inputs {} Inputs for signing and sending multiple transactions.
+         * @param options Options for signing and sending transactions.
          *
          * @return Outputs of signing and sending transactions.
          */
-        readonly signAndSendTransaction: SolanaSignAndSendAllTransactionsMethod;
+        readonly signAndSendAllTransactions: SolanaSignAndSendAllTransactionsMethod;
     };
 };
 
